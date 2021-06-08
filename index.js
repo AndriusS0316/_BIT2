@@ -42,3 +42,16 @@ rez = (x1 * z) / (y3 + y2 + x2 - y3) * (y1 * x2 * x2)
 //      120    /         22          *       972
 //         5301.81
 console.log(rez)
+
+var zz = 54;
+var ni = 76;
+var rt = 98;
+var qw = 11;
+var e99 = 44; 
+
+var rez
+
+rez = zz + ni - rt * qw / e99
+//      130         24.5
+//            105.5
+console.log(rez)
