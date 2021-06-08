@@ -55,3 +55,15 @@ rez = zz + ni - rt * qw / e99
 //      130         24.5
 //            105.5
 console.log(rez)
+
+
+var r5 = 55;
+var r4 = 65;
+var niks = 77;
+
+var rez
+
+rez = r5 + r4 - niks
+//    55 + 65 - 77 
+//        43
+console.log(rez)
