@@ -9,12 +9,14 @@ var saskaitosSuma;
 var totalInvoiceSum; 
 
 /*
+
 var kintamojo deklaravimas
 = reiksmes priskyrimas
 + suma
 - atimtis
 * daugyba
 / dalyba
+
 */
 
 sk1 = 5;
