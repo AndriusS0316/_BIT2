@@ -117,3 +117,11 @@ if (sk1 > 10) {
     console.log("dar viena komanda");
 }
 console.log("pabaiga");
+
+var x = 18;
+
+if (x > 100) {
+    console.log("nelygybe teisinga");
+} else {
+    console.log("nelygybe neteisinga");
+}
