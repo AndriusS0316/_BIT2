@@ -150,4 +150,3 @@ if (z1 < z) {
     console.log("noo ook");
 }
 
-var sk5 = 8;
