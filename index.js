@@ -125,3 +125,11 @@ if (x > 100) {
 } else {
     console.log("nelygybe neteisinga");
 }
+
+var y = 180;
+
+if (y < x) {
+    console.log("teisingai");
+} else {
+    console.log("neteisingai");
+}
