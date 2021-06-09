@@ -133,3 +133,11 @@ if (y < x) {
 } else {
     console.log("neteisingai");
 }
+
+var z = 88;
+
+if (z = y) {
+    console.log("ok");
+} else {
+    console.log("no ok");
+}
