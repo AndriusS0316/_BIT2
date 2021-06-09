@@ -141,3 +141,12 @@ if (z = y) {
 } else {
     console.log("no ok");
 }
+
+var z1 = 88;
+
+if (z1 < z) {
+    console.log("ookk");
+} else {
+    console.log("noo ook");
+}
+
