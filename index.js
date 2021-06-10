@@ -202,3 +202,5 @@ while (i <= iki) {
 // suskaiciuoti visu skaiciu nuo 1 iki 100, kurie dalinasi is 3 suma
 // atspausdinti visus pirminius skaicius intervale nuo 2 iki 100
 
+// suskaiciuoti visu skaiciu nuo 1 iki 100, kurie dalinasi is 3 suma
+// atspausdinti visus pirminius skaicius intervale nuo 2 iki 100
