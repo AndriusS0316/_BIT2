@@ -136,7 +136,7 @@ if (y < x) {
 
 var z = 88;
 
-if (z = y) {
+if (z >= y) {
     console.log("ok");
 } else {
     console.log("no ok");
@@ -150,3 +150,54 @@ if (z1 < z) {
     console.log("noo ook");
 }
 
+var t = 5;
+
+if (t >= 0) {
+    console.log("vienazenklis");
+}
+
+console.log("pabaiga");
+
+
+var suma = 0;
+var sk = 1;
+
+while (sk <= 4) {
+    suma = suma + sk;
+    sk = sk + 1;
+}
+
+console.log(suma);
+
+
+
+
+var sk = 1;
+
+while (sk <= 100) {
+    if (sk % 5 === 0 || sk % 2 === 0) {
+        console.log(sk);
+    }
+    sk = sk + 1;
+}
+console.log("pabaiga");
+
+
+
+
+
+var nuo = 2;
+var iki = 4;
+
+var i = 1;
+while (i <= iki) {
+    var j = 1;
+    while (j <= iki) {
+        console.log(i * j);
+        j = j + 1;
+    }
+    i = i + 1
+}
+
+// suskaiciuoti visu skaiciu nuo 1 iki 100, kurie dalinasi is 3 suma
+// atspausdinti visus pirminius skaicius intervale nuo 2 iki 100
