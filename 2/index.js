@@ -18,9 +18,9 @@ for (var i = 2; i <= x; i++) { // for loop - var i = 2 bus ivykdytas viena karta
 
     if (isPrime === true) {
 
-        console.log(i);
-        suma = suma + i;
-        console.log(suma);
+        console.log(i); 
+        suma = suma + i; 
+        console.log(suma); 
     }
 
 }
