@@ -83,5 +83,5 @@ var e = 5;
 
 console.log(suma + q + w + e);
 
-console.log("pabaiga");
+
 
