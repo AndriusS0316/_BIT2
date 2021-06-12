@@ -77,11 +77,4 @@ while (z <= 100) {
 }
 // console.log(suma);
 
-var q = 2;
-var w = 3;
-var e = 5;
-
-console.log(suma + q + w + e);
-
-console.log("pabaiga");
 
