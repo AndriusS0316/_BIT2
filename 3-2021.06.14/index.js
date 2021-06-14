@@ -78,7 +78,7 @@ var iki = 3;
  console.log("pradzia");
 
 var nuo = 1;
-var iki = 4;
+var iki = 3;
 
 while (nuo <= iki) {
     var x = 1
