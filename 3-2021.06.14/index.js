@@ -90,12 +90,3 @@ while (nuo <= iki) {
 }
 console.log("pabaiga");
 
-var i = 1;
-while (i <= iki) {
-    var j = 1;
-    while (j <= iki) {
-        console.log(i * j);
-        j = j + 1;
-    }
-    i = i + 1
-}
