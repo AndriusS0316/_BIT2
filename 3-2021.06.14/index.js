@@ -60,8 +60,7 @@ var nuo = 1;
 var iki = 3;
 
 
-var nuo = 1;
-var iki = 3;
+
 
 // jusu ND
 /*
@@ -76,6 +75,27 @@ var iki = 3;
 9
 */
 
-while (nuo <= 3) {
-    
+ console.log("pradzia");
+
+var nuo = 1;
+var iki = 3;
+
+while (nuo <= iki) {
+    var x = 1
+    while (x <= iki) {
+        console.log(nuo * x);
+        x += 1;
+    }
+    nuo += 1;
+}
+console.log("pabaiga");
+
+var i = 1;
+while (i <= iki) {
+    var j = 1;
+    while (j <= iki) {
+        console.log(i * j);
+        j = j + 1;
+    }
+    i = i + 1
 }
