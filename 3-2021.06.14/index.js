@@ -80,4 +80,13 @@ var iki = 3;
 var nuo = 1;
 var iki = 3;
 
+while (nuo <= iki) {
+    var x = 1
+    while (x <= iki) {
+        console.log(nuo * x);
+        x += 1;
+    }
+    nuo += 1;
+}
+console.log("pabaiga");
 
