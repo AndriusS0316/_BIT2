@@ -168,9 +168,18 @@ var iki = 5;
 // su ciklus "for" atspausdinti skaicius nuo 100 iki 1 kas 3
 // 100 97 94 91...
 
+console.log("pirmas namu darbas");
 
 for (var i = 1; i < 6; i++) {
     for (var j = 1; j < 6; j++) {
         console.log(i * j);
     }
 }
+
+console.log("antras namu darbas");
+
+for (var x = 100; x > 0; x = x - 3) {
+    console.log(x);
+}
+
+console.log("pabaiga");
