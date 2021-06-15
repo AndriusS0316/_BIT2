@@ -183,5 +183,3 @@ for (var x = 100; x > 0; x = x - 3) {
 }
 
 console.log("pabaiga");
-
-console.log(1234567890);
