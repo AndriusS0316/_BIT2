@@ -182,3 +182,11 @@ while (nuo <= iki) {
     nuo += 1;
 }
 console.log("pabaiga");
+
+for (var i = 1; i <= 5; i++) {
+    var j = 1;
+    while (i <= iki) {
+        console.log(i * j);
+        j = j + 1;
+    }
+}
