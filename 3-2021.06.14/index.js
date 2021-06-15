@@ -168,3 +168,17 @@ var iki = 5;
 // su ciklus "for" atspausdinti skaicius nuo 100 iki 1 kas 3
 // 100 97 94 91...
 
+console.log("pradzia");
+
+var nuo = 1;
+var iki = 5;
+
+while (nuo <= iki) {
+    var x = 1
+    while (x <= iki) {
+        console.log(nuo * x);
+        x += 1;
+    }
+    nuo += 1;
+}
+console.log("pabaiga");
