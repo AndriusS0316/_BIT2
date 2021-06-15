@@ -168,25 +168,9 @@ var iki = 5;
 // su ciklus "for" atspausdinti skaicius nuo 100 iki 1 kas 3
 // 100 97 94 91...
 
-console.log("pradzia");
 
-var nuo = 1;
-var iki = 5;
-
-while (nuo <= iki) {
-    var x = 1
-    while (x <= iki) {
-        console.log(nuo * x);
-        x += 1;
-    }
-    nuo += 1;
-}
-console.log("pabaiga");
-
-for (var i = 1; i <= 5; i++) {
-    var j = 1;
-    while (i <= iki) {
+for (var i = 1; i < 6; i++) {
+    for (var j = 1; j < 6; j++) {
         console.log(i * j);
-        j = j + 1;
     }
 }
