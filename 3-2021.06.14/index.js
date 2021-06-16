@@ -183,3 +183,14 @@ for (var x = 100; x > 0; x = x - 3) {
 }
 
 console.log("pabaiga");
+
+
+var ni = 4; 
+
+if (ni += 3) {
+    console.log(ni);
+} 
+
+let naujas;
+
+const konstanta = 15;
