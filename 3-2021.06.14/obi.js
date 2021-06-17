@@ -32,7 +32,7 @@ console.log(puodukas);
 
 puodukas ["medziaga"] = "stiklas";
 
-console.log(puodukas);
+
 
 // let tasPatsPuodukas = puodukas;
 
