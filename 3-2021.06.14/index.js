@@ -194,3 +194,4 @@ if (ni += 3) {
 let naujas;
 
 const konstanta = 15;
+
