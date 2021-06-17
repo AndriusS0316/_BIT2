@@ -18,6 +18,22 @@ delete puodukas.spalva;
 
 console.log(puodukas);
 
+let savybe = "turis";
+
+console.log(puodukas.medziaga);
+
+console.log(puodukas[savybe]);
+
+//abi eilutes daro ta pati. Savybes pakeitimas.
+puodukas ["kiekis"] = 20;
+puodukas.kiekis = 20; 
+
+console.log(puodukas);
+
+puodukas["medziaga"] === "stiklas";
+
+console.log(puodukas);
+
 // let tasPatsPuodukas = puodukas;
 
 // puodukas.kiekis -= 50;
