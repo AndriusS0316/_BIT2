@@ -30,7 +30,7 @@ puodukas.kiekis = 20;
 
 console.log(puodukas);
 
-puodukas["medziaga"] === "stiklas";
+puodukas ["medziaga"] = "stiklas";
 
 console.log(puodukas);
 
