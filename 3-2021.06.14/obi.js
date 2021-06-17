@@ -34,6 +34,7 @@ puodukas ["medziaga"] = "stiklas";
 
 console.log(puodukas);
 console.log(puodukas);
+console.log(puodukas);
 
 // let tasPatsPuodukas = puodukas;
 
