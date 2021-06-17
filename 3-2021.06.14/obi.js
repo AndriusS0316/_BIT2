@@ -12,6 +12,12 @@ console.log(puodukas.gerimas);
 
 puodukas.gerimas = "kava";
 
+console.log(puodukas);
+
+delete puodukas.spalva;
+
+console.log(puodukas);
+
 // let tasPatsPuodukas = puodukas;
 
 // puodukas.kiekis -= 50;
