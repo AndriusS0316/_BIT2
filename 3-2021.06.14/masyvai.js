@@ -38,12 +38,14 @@ console.log(suma);
 let m = [5, 87, -5, 3, -4];
 /*
 surusiuoti masyva didejimo tvarka
-atspausdiniti
+atspausdinti
 */
 /*
 surusiuoti masyva mazejimo tvarka
-atspausdiniti
+atspausdinti
 */
+
+let m = [5, 87, -5, 3, -4, 107];
 
 met max = m[0];
 for (let i = 1; i < m.length; i++) {
