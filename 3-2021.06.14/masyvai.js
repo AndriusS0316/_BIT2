@@ -45,3 +45,10 @@ surusiuoti masyva mazejimo tvarka
 atspausdiniti
 */
 
+met max = m[0];
+for (let i = 1; i < m.length; i++) {
+    if (m[i] > max) {
+        max = m[i];
+    }
+}
+console.log(max);
