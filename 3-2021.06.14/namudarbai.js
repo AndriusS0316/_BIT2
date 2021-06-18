@@ -15,6 +15,9 @@ atspausdinti visu elementu vidurki
 */
 
 
+
+
+
 //2. Namu Darbas.
 let m1 = [5, 87, -5, 3, -4];
 /*
