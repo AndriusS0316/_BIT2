@@ -83,3 +83,4 @@ for (let i = 1; i < m1.length; i++) {
         max = m1[i];
     }
 }
+console.log(max);
