@@ -72,15 +72,13 @@ let m1 = [5, 87, -5, 3, -4];
 surusiuoti masyva didejimo tvarka
 atspausdinti
 */
+
+let lowestToHighest = m1.sort((a, b) => a - b);
+console.log(lowestToHighest);
+
 /*
 surusiuoti masyva mazejimo tvarka
 atspausdinti
 */
 
-let max = m1[0];
-for (let i = 1; i < m1.length; i++) {
-    if (m1[i] > max) {
-        max = m1[i];
-    }
-}
-console.log(max);
+
