@@ -14,7 +14,55 @@ atspausdinti kiekvienos eilutes elementu vidurki
 atspausdinti visu elementu vidurki
 */
 
+// visu elementu vidurkis:
 
+let suma = 0;
+let x = 0;
+let vidurkis = 0;
+let visas = 0;
+
+for (let i = 0; i < st1.length; i++) {
+    for (let j = 0; j < st1[i].length; j++) {
+    
+    x = st1[i][j];
+    suma = x + suma;
+    }
+}
+console.log(suma);
+
+let h = 0;
+
+for (let g = 0; g < st1.length; g++) {
+    h = st1[g].length;
+    visas = h + visas;
+}
+
+console.log(visas);
+
+vidurkis = suma / visas;
+
+console.log(vidurkis);
+
+
+//atspausdinti kiekvienos eilutes elementu vidurki
+
+let y = 0;
+let u = 0;
+let eilutesSuma = 0;
+let f = 0;
+let eilutesVidurkis = 0;
+
+for (let y = 0; y < st1.length; y++) {
+    for (let u = 0; u < st1[y].length; u++) {
+        f = st1[y][u]
+        eilutesSuma = f + eilutesSuma;
+
+    }
+    console.log(eilutesSuma);
+    eilutesVidurkis = eilutesSuma / st1[y].length;
+    console.log(eilutesVidurkis);
+    eilutesSuma = 0;
+}
 
 
 
@@ -28,3 +76,10 @@ atspausdinti
 surusiuoti masyva mazejimo tvarka
 atspausdinti
 */
+
+let max = m1[0];
+for (let i = 1; i < m1.length; i++) {
+    if (m1[i] > max) {
+        max = m1[i];
+    }
+}
