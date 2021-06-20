@@ -66,3 +66,20 @@ for (let y = 0; y < st1.length; y++) {
 
 
 
+//2. Namu Darbas.
+let m1 = [5, 87, -5, 3, -4];
+/*
+surusiuoti masyva didejimo tvarka
+atspausdinti
+*/
+
+let lowestToHighest = m1.sort((a, b) => a - b);
+console.log(lowestToHighest);
+
+/*
+surusiuoti masyva mazejimo tvarka
+atspausdinti
+*/
+
+let highestToLowest = m1.sort((a, b) => b - a);
+console.log(highestToLowest);
