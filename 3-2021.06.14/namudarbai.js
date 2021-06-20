@@ -73,13 +73,3 @@ surusiuoti masyva didejimo tvarka
 atspausdinti
 */
 
-let lowestToHighest = m1.sort((a, b) => a - b);
-console.log(lowestToHighest);
-
-/*
-surusiuoti masyva mazejimo tvarka
-atspausdinti
-*/
-
-let highestToLowest = m1.sort((a, b) => b - a);
-console.log(highestToLowest);
