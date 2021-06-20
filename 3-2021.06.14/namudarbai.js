@@ -81,3 +81,5 @@ surusiuoti masyva mazejimo tvarka
 atspausdinti
 */
 
+let highestToLowest = m1.sort((a, b) => b - a);
+console.log(highestToLowest);
