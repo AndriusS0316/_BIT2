@@ -137,4 +137,6 @@ let rez = [
 // 34512
 // 23451
 
-for (let ee = 0; ee < )
+for (let ee = 0; ee <= m4.length; ee++) {
+    
+}
