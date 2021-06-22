@@ -23,9 +23,9 @@ let visas = 0;
 
 for (let i = 0; i < st1.length; i++) {
     for (let j = 0; j < st1[i].length; j++) {
-    
-    x = st1[i][j];
-    suma = x + suma;
+
+        x = st1[i][j];
+        suma = x + suma;
     }
 }
 console.log(suma);
@@ -88,21 +88,21 @@ console.log(highestToLowest);
 // Aleksandro sprendimas vidurkiai
 
 let st = [
-[1, 2, 3, 5, 3, -4, 2],
-[4, 5, 6, 10, 11, 12],
-[7, 8, 9, 2, 6, -3, 67],
-[7, 8, 9, -12, 3, -18]
+    [1, 2, 3, 5, 3, -4, 2],
+    [4, 5, 6, 10, 11, 12],
+    [7, 8, 9, 2, 6, -3, 67],
+    [7, 8, 9, -12, 3, -18]
 ];
 let suma1 = 0;
 let skKiekis = 0;
-for(let y = 0; y < st.length; y++) {
-let eilutesSuma = 0;
-for(let x = 0; x < st[y].length; x++) {
-eilutesSuma += st[y][x];
-suma1 += st[y][x];
-}
-skKiekis += st[y].length;
-console.log(eilutesSuma / st[y].length);
+for (let y = 0; y < st.length; y++) {
+    let eilutesSuma = 0;
+    for (let x = 0; x < st[y].length; x++) {
+        eilutesSuma += st[y][x];
+        suma1 += st[y][x];
+    }
+    skKiekis += st[y].length;
+    console.log(eilutesSuma / st[y].length);
 }
 console.log(suma1 / skKiekis);
 
@@ -146,24 +146,33 @@ for (let r44 = 0; r44 < rez.length; r44++) {
             rez[r44][y55] = rez[r44][y55] + o77;
             console.log(o77);
             o77++;
+            if (r44 > 0 && r44 < rez.length) {
+                rez[r44][y55 + 1] = rez[r44][y55];
+                if (y55 === rez[r44].length - 1) {
+                    rez[r44][y55] = rez[r44][y55 - rez[r44].length - 1]
+                }
+            }
         }
     }
+
 }
 console.log(rez);
-for (let r44 = 1; r44 < rez.length; r44++) {
-    for (let y55 = 0; y55 < rez[r44].length; y55++) {
-        if (r44 === 0) {
-            let jj = rez[r44][y55];
-        } else {
-            rez[r44][y55 + 1] = rez[r44][y55];
-        }
-        if (y55 === rez[r44].length - 1) {
-            rez[r44][y55] = jj
-        }
-        
-    }
-    console.log(rez);
-}
+
+
+// for (let r44 = 1; r44 < rez.length; r44++) {
+//     for (let y55 = 0; y55 < rez[r44].length; y55++) {
+//         if (y55 === 0) {
+//             let jj = rez[r44][y55];
+//         } else {
+//             rez[r44][y55 + 1] = rez[r44][y55];
+//         }
+//         if (y55 === rez[r44].length - 1) {
+//             rez[r44][y55] = jj;
+//         }
+
+//     }
+//     console.log(rez);
+// }
 
 
 
