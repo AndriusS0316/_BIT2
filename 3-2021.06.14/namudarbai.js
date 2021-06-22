@@ -160,7 +160,9 @@ for (let r44 = 1; r44 < rez.length; r44++) {
         if (y55 === rez[r44].length - 1) {
             rez[r44][y55] = jj
         }
+        
     }
+    console.log(rez);
 }
 
 
