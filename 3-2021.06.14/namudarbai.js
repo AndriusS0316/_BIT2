@@ -148,9 +148,10 @@ for (let r44 = 0; r44 < rez.length; r44++) {
             o77++;
         }
     }
-    for ()
 }
+for (let r44 = 1; r44 < rez.length; r44++)
 console.log(rez);
+
 
 
 
