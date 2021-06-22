@@ -106,21 +106,10 @@ console.log(eilutesSuma / st[y].length);
 }
 console.log(suma1 / skKiekis);
 
-//rusiavimas
+//rusiavimas Aleksandro kitame faile
 
 
 
-
-//
-let m4 = [1, 2, 3, 4, 5];
-
-let rez = [
-    [0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0]
-]
 // turim gauti
 
 // 12345
@@ -137,6 +126,52 @@ let rez = [
 // 34512
 // 23451
 
-for (let ee = 0; ee <= m4.length; ee++) {
-    
+let m4 = [1, 2, 3, 4, 5];
+
+let rez = [
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0]
+]
+
+//console.log(rez);
+
+let o77 = 1;
+for (let r44 = 0; r44 < rez.length; r44++) {
+    o77 = 1;
+    for (let y55 = 0; y55 < rez[r44].length; y55++) {
+        if (y55 < rez[r44].length) {
+            rez[r44][y55] = rez[r44][y55] + o77;
+            console.log(o77);
+            o77++;
+        }
+    }
+    for ()
 }
+console.log(rez);
+
+
+
+// for (let r44 = 0; r44 < rez.length; r44++) {
+//     for (let y55 = 0; y55 < rez[r44].length; y55++) {
+//         for (let o77 = 1; o77 <= rez[r44].length; o77++) {
+//             rez[r44][y55] = o77;
+//             console.log(rez[r44][y55]);
+//         }
+//     }
+// }
+// console.log(rez);
+
+
+// for (let ee = 0; ee < rez.length; ee++) {
+//     for (let ww = 0; ww < rez[ee].length; ww++) {
+//         rez[ee][ww]++
+//         if (rez[ee][ww] === rez[ee][ww])
+//         rez[ee][ww]++
+//     }
+// }
+
+// console.log(rez);
+
