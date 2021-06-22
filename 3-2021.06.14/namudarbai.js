@@ -153,6 +153,8 @@ for (let r44 = 1; r44 < rez.length; r44++) {
     for (let y55 = 0; y55 < rez[r44].length; y55++) {
         if (y55 === 0) {
             let jj = rez[r44][y55];
+        } else {
+            rez[r44][y55 + 1] = rez[r44][y55];
         }
         if (y55 === rez[r44].length - 1) {
             rez[r44][y55] = jj
