@@ -280,7 +280,32 @@ function fibonacci(n) {
 
 console.log(fibonacci(16));
 
+// Aleksandro sprendimas 
 
+console.log("pradzia");
+function fibb(sk5, sk7, max) {
+    console.log(sk5); 
+    let next = sk5 + sk7;
+    if (next < max) {
+        fibb(sk7, next, max);
+    } else {
+        console.log(sk7);
+    }
+}
+fibb(0, 1, 1000);
+console.log("pabaiga");
+
+// Aruno sprendimas 
+
+function fib(sk1, sk2, max) {
+    let sk3 = sk1 + sk2;
+    if (sk3 <= max) {
+        console.log(sk3);
+        fib(sk2, sk3, max);
+    }        
+}
+console.log(1, "\n", 1);
+fib(1, 1, 20);
 
 
 
@@ -321,3 +346,27 @@ function labas(vardas, pavarde) {
 labas("Jonas", "Jonaitis");
 labas("Antanas");
 labas();
+
+
+let m10 = [
+    [
+    [1, 2, 3, 4, 5, 6],
+    [74, 23, 5, 7, 4],
+    [67, 4, 7, 3, 7, 9, 3]
+    ],
+    [
+    [6, 34, 67, 8, 4, 8],
+    [7, 4, 5],
+    [3, 6, 8, 0, 3, 89],
+    [3, 6, 2, 5, 7, 6, 3, 1]
+    ],
+    [
+    [1, 1, 1, 1, 4],
+    [2, 2, 2, 12],
+    [23],
+    [7, 4, 7, 5, 32, 8, 3]
+    ]
+    ];
+    /*
+    atspausdinti visu nelyginiu skaiciu suma ir vidurki
+    */
