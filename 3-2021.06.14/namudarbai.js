@@ -292,15 +292,32 @@ jei paduotas tik vardas - spausdina: labas vardas
 jei nieko nepaduota - spausdina: labas nezinomas zmogau
 */
 
+// function labas(vardas, pavarde) {
+//     console.log("labas, " + vardas + " " + pavarde);
+//     if (vardas = undefined) {
+//         console.log("Labas, " + "nezinomas zmogau");
+//     }
+// }
+
+// labas("Jonas", "Jonaitis");
+// labas("Petras", "Petraitis");
+// labas("Antanas");
+// labas();
+// labas("Jonas", "Petraitis", 10, "!", false);
+
 function labas(vardas, pavarde) {
-    console.log("labas, " + vardas + " " + pavarde);
-    if (vardas = undefined) {
-        console.log("Labas, " + "nezinomas zmogau");
+    if (vardas, pavarde) {
+        console.log("labas, " + vardas + " " + pavarde + ",");
+    } else {
+        if (vardas) {
+            console.log("labas, " + vardas + ",");
+        } else {
+            if (labas !== 0) {
+                console.log("labas, nezinomas zmogau,");
+            }
+        }
     }
 }
-
 labas("Jonas", "Jonaitis");
-labas("Petras", "Petraitis");
 labas("Antanas");
 labas();
-labas("Jonas", "Petraitis", 10, "!", false);
