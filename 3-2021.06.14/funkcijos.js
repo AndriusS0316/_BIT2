@@ -74,3 +74,33 @@ console.log(vardas(meme));
 console.log(vardas(bubu));
 console.log(vardas(m1));
 console.log(vardas(qq));
+
+
+
+// faktorialas 
+// kai funkcija kviecia pati save tuomet vadinama rekursija
+
+function faktorialas(sk) {
+    if (sk < 0) {
+        return -1;
+    }
+    if (sk === 0) {
+        return 1;
+    }
+    let f = sk * faktorialas(sk - 1);
+    return f;
+}
+
+console.log(faktorialas(4));
+console.log(faktorialas(7));
+console.log(faktorialas(-10));
+
+function labas(vardas, pavarde) {
+    console.log("labas, " + vardas + " " + pavarde);
+}
+
+labas("Jonas", "Jonaitis"); 
+labas("Petras", "Petraitis"); 
+labas("Antanas"); 
+labas();
+labas("Jonas", "Petraitis", 10, "!", false);
