@@ -284,7 +284,7 @@ console.log(fibonacci(16));
 
 console.log("pradzia");
 function fibb(sk5, sk7, max) {
-    console.log(sk5); 
+    console.log(sk5);
     let next = sk5 + sk7;
     if (next < max) {
         fibb(sk7, next, max);
@@ -302,7 +302,7 @@ function fib(sk1, sk2, max) {
     if (sk3 <= max) {
         console.log(sk3);
         fib(sk2, sk3, max);
-    }        
+    }
 }
 console.log(1, "\n", 1);
 fib(1, 1, 20);
@@ -350,23 +350,36 @@ labas();
 
 let m10 = [
     [
-    [1, 2, 3, 4, 5, 6],
-    [74, 23, 5, 7, 4],
-    [67, 4, 7, 3, 7, 9, 3]
+        [1, 2, 3, 4, 5, 6],
+        [74, 23, 5, 7, 4],
+        [67, 4, 7, 3, 7, 9, 3]
     ],
     [
-    [6, 34, 67, 8, 4, 8],
-    [7, 4, 5],
-    [3, 6, 8, 0, 3, 89],
-    [3, 6, 2, 5, 7, 6, 3, 1]
+        [6, 34, 67, 8, 4, 8],
+        [7, 4, 5],
+        [3, 6, 8, 0, 3, 89],
+        [3, 6, 2, 5, 7, 6, 3, 1]
     ],
     [
-    [1, 1, 1, 1, 4],
-    [2, 2, 2, 12],
-    [23],
-    [7, 4, 7, 5, 32, 8, 3]
+        [1, 1, 1, 1, 4],
+        [2, 2, 2, 12],
+        [23],
+        [7, 4, 7, 5, 32, 8, 3]
     ]
-    ];
-    /*
-    atspausdinti visu nelyginiu skaiciu suma ir vidurki
-    */
+];
+/*
+atspausdinti visu nelyginiu skaiciu suma ir vidurki
+*/
+
+let suma13 = 0;
+
+for (let x = 0; x < m10.length; x++) {
+    for (let y = 0; y < m10[x].length; y++) {
+        for (let z = 0; z < m10[x][y].length; z++) {
+            if (m10[x][y][z] % 2 !== 0) {
+                suma13 = m10[x][y][z] + suma13;
+            }
+        }
+    }
+}
+console.log(suma13);
