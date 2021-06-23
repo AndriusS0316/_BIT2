@@ -146,12 +146,11 @@ for (let r44 = 0; r44 < rez.length; r44++) {
             rez[r44][y55] = rez[r44][y55] + o77;
             console.log(o77);
             o77++;
-            if (r44 > 0 && r44 < rez.length) {
-                rez[r44][y55 + 1] = rez[r44][y55];
-                if (y55 === rez[r44].length - 1) {
-                    rez[r44][y55] = rez[r44][y55 - rez[r44].length - 1]
-                }
-            }
+            // if (y55 = 0) {
+            //     rez[r44][y55] = rez[r44][y55 + rez[r44].length - 1]
+            // } else {
+            //     rez[r44][y55] = rez[r44][y55 - rez[r44].length - 2]
+            // }
         }
     }
 
@@ -175,7 +174,12 @@ console.log(rez);
 // }
 
 
-
+// if (r44 > 0 && r44 < rez.length) {
+//     rez[r44][y55 + 1] = rez[r44][y55];
+//     if (y55 === rez[r44].length - 1) {
+//         rez[r44][y55] = rez[r44][y55 - rez[r44].length - 1]
+//     }
+// }
 
 
 // for (let r44 = 0; r44 < rez.length; r44++) {
@@ -199,3 +203,104 @@ console.log(rez);
 
 // console.log(rez);
 
+// Aleksandro atsakymas
+
+for (let y = 0; y < rez.length; y++) {
+    for (let x = 0; x < rez[y].length; x++) {
+        rez[y][x] = m4[(x + y) % m4.length];
+    }
+}
+
+console.log(rez);
+
+for (let y = 0; y < rez.length; y++) {
+    for (let x = 0; x < rez[y].length; x++) {
+        rez[y][(x + y) % m4.length] = m4[x];
+    }
+}
+
+console.log(rez);
+
+
+// faktorialas 
+// kai funkcija kviecia pati save tuomet vadinama rekursija
+
+function faktorialas(sk) {
+    if (sk === 0) {
+        return 1;
+    }
+    let f = sk * faktorialas(sk - 1);
+    return f;
+}
+
+console.log(faktorialas(4));
+
+// Fibonacio skaiciu seka: Sekantis skaicius yra pries tai ejusiu dvieju skaiciu suma
+
+// pvz 112358
+
+// fib (sk1, sk2, max)
+/*
+Fibonacci skaiciu sekos spausdinimas iki nurodytos maksimalios reiksmes
+Rekursine funkcija
+1, 1, 20
+1
+1
+2
+3
+5
+8
+13
+*/
+function fib(sk1, sk2, max) {
+    // ND
+}
+fib(1, 1, 1000);
+
+/*
+parasyti funkcija labas(vardas, pavarde)
+jei paduotas ir vardas ir pavarde - spausdina: labas vardas pavarde
+jei paduotas tik vardas - spausdina: labas vardas
+jei nieko nepaduota - spausdina: labas nezinomas zmogau
+*/
+
+// Fibonacio skaiciu seka
+
+
+
+// function fibonacci(n) {
+//     if (n === 1) {
+//         return [0, 1];
+//     } else {
+//         var s = fibonacci(n - 1);
+//         s.push(s[s.length - 1] + s[s.length - 2]);
+//         return s;
+//     }
+// };
+
+// console.log(fibonacci(11));
+
+
+
+
+
+
+/*
+parasyti funkcija labas(vardas, pavarde)
+jei paduotas ir vardas ir pavarde - spausdina: labas vardas pavarde
+jei paduotas tik vardas - spausdina: labas vardas
+jei nieko nepaduota - spausdina: labas nezinomas zmogau
+*/
+
+function labas(vardas, pavarde) {
+    console.log("labas, " + vardas + " " + pavarde);
+    if (vardas = undefined) {
+        console.log("Labas, " + "nezinomas zmogau");
+    }
+}
+
+labas("Jonas", "Jonaitis");
+labas("Petras", "Petraitis");
+labas("Antanas");
+labas();
+labas("Jonas", "Petraitis", 10, "!", false);
