@@ -371,4 +371,7 @@ let m10 = [
 atspausdinti visu nelyginiu skaiciu suma ir vidurki
 */
 
+let suma13 = 0;
+let daliklis = 0;
+let dalmuo = 0;
 
