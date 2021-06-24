@@ -331,15 +331,15 @@ jei nieko nepaduota - spausdina: labas nezinomas zmogau
 // labas("Jonas", "Petraitis", 10, "!", false);
 
 function labas(vardas, pavarde) {
-    if (vardas, pavarde) {
+    if (vardas !== undefined && pavarde !== undefined) {
         console.log("labas, " + vardas + " " + pavarde + ",");
     } else {
-        if (vardas) {
+        if (vardas !== undefined) {
             console.log("labas, " + vardas + ",");
         } else {
-            if (labas !== 0) {
+            // if (labas !== 0) {
                 console.log("labas, nezinomas zmogau,");
-            }
+            // }
         }
     }
 }
