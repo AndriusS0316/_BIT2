@@ -387,3 +387,5 @@ for (let x = 0; x < m10.length; x++) {
 }
 dalmuo = suma13 / daliklis; 
 console.log(suma13); 
+console.log(daliklis); 
+console.log(dalmuo); 
