@@ -114,6 +114,7 @@ number
 string
 function
 symbol
+boolean
 */
 
 function suma(a, b) {
@@ -157,4 +158,90 @@ let puodukas = {
     kiekie: 100,
     gerimas: "arbata"
 };
+
+
+
+
+
+function suma (a, b, c) {
+    arguments 
+    let s = 0;
+    if (typeof a === "number") {
+        s += a;
+    }
+    if (typeof b === "number") {
+        s += b;
+    }
+    if (typeof c === "number") {
+        s += c;
+    }
+    return s;
+}
+
+console.log(suma(1, 2, 3));
+console.log(suma(1, 2));
+console.log(suma(1));
+
+
+function suma() {
+    let s = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        if (typeof arguments[i] === "number") {
+            s += arguments[i];
+        }
+    }
+    return s;
+}
+
+
+
+function pasisveikinimas(vardas = "bevardis", pavarde = "bepavardis") {
+    console.log(arguments);
+    console.log("labas " + vardas + " " + pavarde);
+    if (arguments.length > 2) {
+        str += " titulai:"
+    }
+    for (let i = 2; i < arguments.length; i++) {
+        str += " " + arguments[i];
+    }
+    console.log(str);
+}
+
+pasisveikinimas("Jonas", "Jonaitis"); 
+pasisveikinimas("Jonas", "Jonaitis", "Imperatorius"); 
+pasisveikinimas("Jonas", "Jonaitis", "Imperatorius", "caras", "valdovas"); 
+pasisveikinimas(undefined, null, "Imperatorius", "caras", "valdovas"); 
+
+
+
+function pasisveikinimas1(zmogus) {
+    console.log("labas" + zmogus.vardas + " " + zmogus.pavarde);
+    zmogus.jauPasveikintas = true;
+}
+
+pasisveikinimas1({
+    vardas: "Jonas",
+    pavarde: "Jonaitis"
+});
+
+let z = {
+    vardas: "Jonas",
+    pavarde: "Jonaitis"
+}
+
+console.log(z);
+pasisveikinimas1(z)
+console.log(z);
+
+
+
+function skaiciai(sk) {
+    sk = sk * sk;
+    console.log(sk);
+}
+let s = 10;
+skaiciai(s);
+console.log(s);
+
+
 
