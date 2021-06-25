@@ -106,6 +106,16 @@ labas();
 labas("Jonas", "Petraitis", 10, "!", false);
 
 
+typeof 
+/*
+reiksmes, kurias grazina "typeof" kintamasis
+undefined
+number
+string
+function
+symbol
+*/
+
 function suma(a, b) {
     return a + b;
 }
@@ -119,17 +129,27 @@ function atimtis(s1, s2) {
 }
 
 function skaiciuotuvas (pirmas, antras, veiksmas) {
-    return veiksmas(pirmas, antras);
+    if (typeof veiksmas === "function") {
+        return veiksmas(pirmas, antras);  
+    } else {
+        console.log("nezinomas veiksmas");
+    }
+    return undefined;
 }
 
 // suma = atimtis; 
 
 let dalyba = function (a, b) { //sita funkcija neturi vardo kartais galima rasti pavadinta anonimiine funkcija.
     return a / b;
-}
+};
 
+// dalyba = 7;
+
+dalyba = 7;
+console.log(typeof dalyba);
 console.log(skaiciuotuvas(2, 3, suma));
 console.log(skaiciuotuvas(2, 3, sandauga));
+console.log(skaiciuotuvas(2, 3, dalyba));
 
 
 let puodukas = {
