@@ -124,3 +124,10 @@ function skaiciuotuvas (pirmas, antras, veiksmas) {
 
 console.log(skaiciuotuvas(2, 3, suma));
 console.log(skaiciuotuvas(2, 3, sandauga));
+
+
+let puodukas = {
+    turis: 300,
+    kiekie: 100,
+    gerimas: "arbata"
+};
