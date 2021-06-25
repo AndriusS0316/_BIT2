@@ -371,4 +371,21 @@ let m10 = [
 atspausdinti visu nelyginiu skaiciu suma ir vidurki
 */
 
+let suma13 = 0;
+let daliklis = 0;
+let dalmuo = 0;
 
+for (let x = 0; x < m10.length; x++) {
+    for (let y = 0; y < m10[x].length; y++) {
+        for (let z = 0; z < m10[x][y].length; z++) {
+            if (m10[x][y][z] % 2 !== 0) {
+                suma13 = m10[x][y][z] + suma13;
+                daliklis = daliklis + 1;
+            }
+        }
+    }
+}
+dalmuo = suma13 / daliklis; 
+console.log(suma13); 
+console.log(daliklis); 
+console.log(dalmuo); 
