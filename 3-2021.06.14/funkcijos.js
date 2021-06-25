@@ -104,3 +104,23 @@ labas("Petras", "Petraitis");
 labas("Antanas"); 
 labas();
 labas("Jonas", "Petraitis", 10, "!", false);
+
+
+function suma(a, b) {
+    return a + b;
+}
+
+function sandauga(sk4, sk44) {
+    return sk4 * sk44;
+}
+
+function atimtis(s1, s2) {
+    return s1 - s2;
+}
+
+function skaiciuotuvas (pirmas, antras, veiksmas) {
+    return veiksmas(pirmas, antras);
+}
+
+console.log(skaiciuotuvas(2, 3, suma));
+console.log(skaiciuotuvas(2, 3, sandauga));
