@@ -122,6 +122,12 @@ function skaiciuotuvas (pirmas, antras, veiksmas) {
     return veiksmas(pirmas, antras);
 }
 
+// suma = atimtis; 
+
+let dalyba = function (a, b) { //sita funkcija neturi vardo kartais galima rasti pavadinta anonimiine funkcija.
+    return a / b;
+}
+
 console.log(skaiciuotuvas(2, 3, suma));
 console.log(skaiciuotuvas(2, 3, sandauga));
 
@@ -131,3 +137,4 @@ let puodukas = {
     kiekie: 100,
     gerimas: "arbata"
 };
+
