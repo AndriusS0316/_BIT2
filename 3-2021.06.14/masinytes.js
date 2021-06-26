@@ -133,3 +133,15 @@ console.log(sveikasAtsitiktinis);
 // } 
 
 
+let a = 0;
+let s = 0;
+let d = 0;
+let f = 0;
+let g = 0;
+let h = 0;
+let j = 0;
+let k = 0;
+
+let m8 = [a, s, d, f, g, h, j, k];
+
+for (let pp = 0; a < 1000 || s < 1000 || d < 1000 || f < 1000 || g < 1000 || h < 1000 || j < 1000 || k < 1000)
