@@ -144,8 +144,12 @@ let k = 0;
 
 let m8 = [a, s, d, f, g, h, j, k];
 
-for (let pp = 0; a < 1000 || s < 1000 || d < 1000 || f < 1000 || g < 1000 || h < 1000 || j < 1000 || k < 1000; pp++) {
-    
+for (let pp = 0; a < 1000 && s < 1000 && d < 1000 && f < 1000 && g < 1000 && h < 1000 && j < 1000 && k < 1000; pp++) {
+    if (aAtsi < 0.2) {
+        a = aMaz + a;
+    } else if (0.2 < aAtsi && aAtsi < 0.7) {
+        a = aDid + a;
+    }
     if (pp === m8.length - 1) {
         pp === 0;
     }
