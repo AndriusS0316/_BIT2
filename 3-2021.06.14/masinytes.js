@@ -148,13 +148,15 @@ let Did = Math.floor(Math.random() * 10 + 1);
 
 let m8 = [a, s, d, f, g, h, j, k];
 
-for (let pp = 0; a < 1000 && s < 1000 && d < 1000 && f < 1000 && g < 1000 && h < 1000 && j < 1000 && k < 1000; pp++) {
+for (let pp = 0; m8[pp] < 1000; pp++) {
     if (Atsi < 0.2) {
         m8[pp] = Maz + m8[pp];
     } else if (0.2 < Atsi && Atsi < 0.7) {
         m8[pp] = Did + m8[pp];
     }
     if (pp === m8.length - 1) {
-        pp === 0;
+        pp === -1;
     }
 }
+
+console.log(m8);
