@@ -195,9 +195,9 @@ function suma() {
 
 
 
-function pasisveikinimas(vardas = "bevardis", pavarde = "bepavardis") {
+function pasisveikinimas (vardas = "bevardis", pavarde = "bepavardis") {
     console.log(arguments);
-    console.log("labas " + vardas + " " + pavarde);
+    let str = "labas " + pavarde + " " + vardas;
     if (arguments.length > 2) {
         str += " titulai:"
     }
