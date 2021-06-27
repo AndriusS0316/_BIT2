@@ -165,13 +165,13 @@ console.log(m8);
 
 
 
-// for (let pp = 0; m8[pp] < 1000; pp++) {
-//     if (Atsi < 0.2) {
-//         m8[pp] = Maz + m8[pp];
-//     } else if (0.2 < Atsi && Atsi < 0.7) {
-//         m8[pp] = Did + m8[pp];
-//     }
-//     if (pp === m8.length - 1) {
-//         pp === -1;
-//     }
-// }
+for (let pp = 0; m8[pp] < 1000; pp++) {
+    if (Atsi < 0.2) {
+        m8[pp] = Maz + m8[pp];
+    } else if (0.2 < Atsi && Atsi < 0.7) {
+        m8[pp] = Did + m8[pp];
+    }
+    if (pp === m8.length - 1) {
+        pp === -1;
+    }
+}
