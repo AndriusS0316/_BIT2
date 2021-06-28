@@ -283,4 +283,5 @@ for (let i = 0; i < masinos.length - 1; i++) {
 }
 console.log(masinos);
 
-// Supaprastinta versija
+// Supaprastinta versija kitame faile
+
