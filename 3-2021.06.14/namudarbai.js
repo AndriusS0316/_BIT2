@@ -389,3 +389,14 @@ dalmuo = suma13 / daliklis;
 console.log(suma13); 
 console.log(daliklis); 
 console.log(dalmuo); 
+
+
+/*
+sukurti puoduko konstruktoriu
+kiekvienas puodukas turi tureti spalva, kieki ir max turi
+puodukai turi moketi:
+isgerti(kiek) - negalima isgerti daugiau negu yra puoduke
+ipilti(kiek) - negalima, kad puoduke butu daugiau negu telpa
+sukurti kelis puodukus
+ir ipilti, isgerti ir paziureti, kaip tai veikia
+*/
