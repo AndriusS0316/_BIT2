@@ -416,6 +416,9 @@ function Puodukas(pavadinimas) {
             this.turis += kiek;
         }
     }
+    this.isgerti = function (kiek) {
+        
+    }
 }
 
 let puodukas1 = new Puodukas ("rudas");
