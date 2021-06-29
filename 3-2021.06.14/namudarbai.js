@@ -432,6 +432,7 @@ let puodukas2 = new Puodukas ("geltonas");
 let puodukas3 = new Puodukas ("zalias");
 
 puodukas1.maximumas(400);
+puodukas1.maxTuris = 200;
 puodukas1.kiekis(300);
 puodukas1.isgerti(200);
 
