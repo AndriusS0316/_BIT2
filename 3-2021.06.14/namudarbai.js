@@ -403,7 +403,7 @@ ir ipilti, isgerti ir paziureti, kaip tai veikia
 
 function Puodukas(pavadinimas) {
     this.pavadinimas = pavadinimas;
-    this.turis = 300;
+    this.turis = 0;
     this.maxTuris = 0;
     this.maximumas = function (max) {
         this.maxTuris = max;
