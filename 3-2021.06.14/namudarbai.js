@@ -403,7 +403,7 @@ ir ipilti, isgerti ir paziureti, kaip tai veikia
 
 function Puodukas(pavadinimas) {
     this.pavadinimas = pavadinimas;
-    this.turis = 0;
+    this.turis = 300;
     this.maxTuris = 0;
     this.maximumas = function (max) {
         this.maxTuris = max;
@@ -417,7 +417,13 @@ function Puodukas(pavadinimas) {
         }
     }
     this.isgerti = function (kiek) {
-        
+        if (0 < kiek && kiek <= this.turis) {
+            this.turis -= kiek;
+        } else if (this.turis < kiek) {
+            this.turis -= this.turis;
+        } else if (kiek === 0) {
+            this.turis;
+        }
     }
 }
 
@@ -427,10 +433,15 @@ let puodukas3 = new Puodukas ("zalias");
 
 puodukas1.kiekis(300);
 puodukas1.maximumas(400);
+puodukas1.isgerti(200)
+
 puodukas2.kiekis(200);
 puodukas2.maximumas(700);
+puodukas2.isgerti(100)
+
 puodukas3.kiekis(500);
 puodukas3.maximumas(300);
+puodukas3.isgerti(700)
 
 console.log(puodukas1);
 console.log(puodukas2);
