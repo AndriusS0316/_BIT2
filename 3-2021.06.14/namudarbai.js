@@ -400,3 +400,35 @@ ipilti(kiek) - negalima, kad puoduke butu daugiau negu telpa
 sukurti kelis puodukus
 ir ipilti, isgerti ir paziureti, kaip tai veikia
 */
+
+function Puodukas(pavadinimas) {
+    this.pavadinimas = pavadinimas;
+    this.turis = 0;
+    this.maxTuris = 0;
+    this.maximumas = function (max) {
+        this.maxTuris = max;
+    }
+    this.kiekis = function (kiek) {
+        if (kiek > this.maxTuris) {
+            kiek = this.maxTuris;
+            this.turis += kiek;
+        } else {
+            this.turis += kiek;
+        }
+    }
+}
+
+let puodukas1 = new Puodukas ("rudas", 300, 400);
+let puodukas2 = new Puodukas ("geltonas", 200, 700);
+let puodukas3 = new Puodukas ("zalias", 500, 300);
+
+puodukas1.kiekis(300);
+puodukas1.maximumas(400);
+puodukas2.kiekis(200);
+puodukas2.maximumas(700);
+puodukas3.kiekis(500);
+puodukas3.maximumas(300);
+
+console.log(puodukas1);
+console.log(puodukas2);
+console.log(puodukas3);
