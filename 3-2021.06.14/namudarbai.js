@@ -431,17 +431,17 @@ let puodukas1 = new Puodukas ("rudas");
 let puodukas2 = new Puodukas ("geltonas");
 let puodukas3 = new Puodukas ("zalias");
 
-puodukas1.kiekis(300);
 puodukas1.maximumas(400);
-puodukas1.isgerti(200)
+puodukas1.kiekis(300);
+puodukas1.isgerti(200);
 
-puodukas2.kiekis(200);
 puodukas2.maximumas(700);
-puodukas2.isgerti(100)
+puodukas2.kiekis(200);
+puodukas2.isgerti(100);
 
-puodukas3.kiekis(500);
 puodukas3.maximumas(300);
-puodukas3.isgerti(700)
+puodukas3.kiekis(500);
+puodukas3.isgerti(700);
 
 console.log(puodukas1);
 console.log(puodukas2);
