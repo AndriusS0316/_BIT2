@@ -63,3 +63,4 @@ Termosas.prototype.pasildyk = function (kiek) {
 Termosas.prototype.atvesink = function (kiek) {
     this.temp -= kiek;
 }
+const t1 = new Termosas("Zalias", 1000);
