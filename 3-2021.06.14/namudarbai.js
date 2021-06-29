@@ -418,9 +418,9 @@ function Puodukas(pavadinimas) {
     }
 }
 
-let puodukas1 = new Puodukas ("rudas", 300, 400);
-let puodukas2 = new Puodukas ("geltonas", 200, 700);
-let puodukas3 = new Puodukas ("zalias", 500, 300);
+let puodukas1 = new Puodukas ("rudas");
+let puodukas2 = new Puodukas ("geltonas");
+let puodukas3 = new Puodukas ("zalias");
 
 puodukas1.kiekis(300);
 puodukas1.maximumas(400);
