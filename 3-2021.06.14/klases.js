@@ -94,3 +94,22 @@ console.log(p);
 p.ipilk(-100);
 // console.log(p1);
 
+
+
+
+
+
+let o = {
+    spalva: "juodas",
+    kiekis: 20,
+    maxTuris: 500
+}
+
+if (o instanceof Puodukas) {
+    o.ipilk(12);
+    if (o instanceof Termosas) {
+        o.pasildyk(23);
+    }
+}
+
+console.log(o);
