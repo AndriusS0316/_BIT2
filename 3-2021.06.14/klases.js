@@ -20,7 +20,6 @@ class Puodukas {
         } else {
             console.log("Sekmingai ipylem " + kiek + ". Liko laisvos vietos: " + (this.maxTuris - this.kiekis));
         }
-        this.temp -= 5;
     }
 
     isgerk(kiek) {
@@ -57,6 +56,21 @@ class Termosas extends Puodukas {
     atvesink(kiek) {
         this.temp -= kiek;
     }
+
+    console.log("pilam i termosa");
+        super.ipilk(kiek)
+        // if (kiek <= 0) {
+        //     console.log("Ar zinai, ka darai?");
+        //     return;
+        // }
+        // this.kiekis += kiek;
+        // if (this.kiekis > this.maxTuris) {
+        //     console.log("Ant kelniu issipyle " + (this.kiekis - this.maxTuris));
+        //     this.kiekis = this.maxTuris;
+        // } else {
+        //     console.log("Sekmingai ipylem " + kiek + ". Liko laisvos vietos: " + (this.maxTuris - this.kiekis));
+        // }
+        this.temp -= 5;
 }
 
 function Puodukas1 (spalva, maxTuris) {
@@ -66,13 +80,15 @@ function Puodukas1 (spalva, maxTuris) {
 }
 
 let p = new Puodukas("Baltas", 150);
-let p1 = new Puodukas("Baltas", 150);
+// let p1 = new Puodukas("Baltas", 150);
 let t = new Termosas("Zalias", 1000);
 
 t.ipilk(555);
 console.log(t);
+t.isgerk(200);
+console.log(t);
 
 console.log(p);
 p.ipilk(-100);
-console.log(p1);
+// console.log(p1);
 
