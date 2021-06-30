@@ -56,7 +56,8 @@ class Termosas extends Puodukas {
     atvesink(kiek) {
         this.temp -= kiek;
     }
-
+    
+    isgerk(kiek) {
     console.log("pilam i termosa");
         super.ipilk(kiek)
         // if (kiek <= 0) {
@@ -71,6 +72,7 @@ class Termosas extends Puodukas {
         //     console.log("Sekmingai ipylem " + kiek + ". Liko laisvos vietos: " + (this.maxTuris - this.kiekis));
         // }
         this.temp -= 5;
+    }
 }
 
 function Puodukas1 (spalva, maxTuris) {
