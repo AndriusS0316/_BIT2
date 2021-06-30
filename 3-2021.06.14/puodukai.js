@@ -57,6 +57,7 @@ function Termosas(spalva, maxTuris) {
 }
 Termosas.prototype = Object.create(Puodukas.prototype);
 Termosas.prototype.constructor = Termosas;
+
 Termosas.prototype.pasildyk = function (kiek) {
     this.temp += kiek;
 }
