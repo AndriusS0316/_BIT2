@@ -42,9 +42,10 @@ class Puodukas {
 }
 
 class Termosas extends Puodukas {
+
     constructor(spalva, maxTuris) {
         super(spalva, maxTuris); //sita ir eilute zemiau yra vienodos
-        //Puodukas.apply(this, arguments);
+        //Puodukas.call(this, spalva, maxTuris);
         this.temp = 20;
     }
 
@@ -66,7 +67,8 @@ function Puodukas1 (spalva, maxTuris) {
 let p = new Puodukas("Baltas", 150);
 let p1 = new Puodukas("Baltas", 150);
 
-this.ipilk(555)
+t.ipilk(555);
+console.log(t);
 
 console.log(p);
 p.ipilk(-100);
