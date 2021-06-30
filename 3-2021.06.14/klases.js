@@ -20,6 +20,7 @@ class Puodukas {
         } else {
             console.log("Sekmingai ipylem " + kiek + ". Liko laisvos vietos: " + (this.maxTuris - this.kiekis));
         }
+        this.temp -= 5;
     }
 
     isgerk(kiek) {
@@ -66,6 +67,7 @@ function Puodukas1 (spalva, maxTuris) {
 
 let p = new Puodukas("Baltas", 150);
 let p1 = new Puodukas("Baltas", 150);
+let t = new Termosas("Zalias", 1000);
 
 t.ipilk(555);
 console.log(t);
