@@ -96,14 +96,14 @@ p.ipilk(-100);
 
 
 
+let o = t;
 
 
-
-let o = {
-    spalva: "juodas",
-    kiekis: 20,
-    maxTuris: 500
-}
+// o = {
+//     spalva: "juodas",
+//     kiekis: 20,
+//     maxTuris: 500
+// }
 
 if (o instanceof Puodukas) {
     o.ipilk(12);
@@ -113,3 +113,7 @@ if (o instanceof Puodukas) {
 }
 
 console.log(o);
+
+if (o instanceof Object) {
+    console.log("tai objektas");
+}
