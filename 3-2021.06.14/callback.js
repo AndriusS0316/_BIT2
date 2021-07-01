@@ -1,14 +1,20 @@
 "use strict"; 
 
-function test() {
+console.log("pradzia");
+
+function test1() {
     console.log("1");
+}    
+function test2() {
     console.log("2");
+}
+function test3() {
     console.log("3");
 }
+    
+setTimeout(test2, 2);
+setTimeout(test1, 23);
+setTimeout(test3, 1);
 
-setTimeout(test, 5);
-
-console.log("4");
-console.log("5");
-console.log("6");
+console.log("pabaiga");
 
