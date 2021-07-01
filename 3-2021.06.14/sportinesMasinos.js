@@ -124,10 +124,14 @@ const masinos = [
 
 let checkPoint = 100;
 let lyderis;
+let spoilerisPakeltas = true;
 do {
     // keiciam greiti ir vaziuojam
     for (let i = 0; i < masinos.length; i++) {
-        // 
+        // tikrinam del spoilerio
+        if (Math.floor(Math.random() * 10 + 1) % 2 !== 0) {
+            
+        }
         let keiciamGreiti = Math.random();
         if (keiciamGreiti < 0.2) {
             masinos[i].stabdis(Math.floor(Math.random() * 5 + 1));
