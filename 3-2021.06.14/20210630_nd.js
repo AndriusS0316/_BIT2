@@ -37,8 +37,6 @@ atspausdinti turnyrine lentele
 
 */
 
-let spoilerisPakeltas;
-
 class Masina {
     constructor(pavadinimas) {
         this.pavadinimas = pavadinimas;
@@ -48,9 +46,6 @@ class Masina {
 
     gazas(kiek) {
         this.greitis += kiek;
-        if (this.greitis > this.max) {
-            this.greitis = this.max;
-        }
     }
 
     stabdis(kiek) {
@@ -77,50 +72,35 @@ class Masina {
 class SportineMasina extends Masina {
     constructor(pavadinimas) {
         super(pavadinimas);
+        this.spoileris = false;
     }
-    
+
     gazas(kiek) {
-        if (spoilerisPakeltas) {
-            super.gazas(kiek);
-        } else {
-            super.gazas(kiek * 2);
+        if (this.spoileris = false) {
+            this.greitis = kiek * 2;
+            return
         }
+        if (this.spoileris = true) {
+            this.greitis += kiek;
+            return
+        }
+
     }
+
     stabdis(kiek) {
-        if (spoilerisPakeltas) {
-            super.stabdis(kiek * 2);
-        } else {
-            super.stabdis(kiek);
+        if (this.spoileris = false) {
+            this.greitis -= kiek;
+            if (this.greitis < 0) {
+                this.greitis = 0;
+                return
+            }
+        }
+        if (this.spoileris = true) {
+            this.greitis += (kiek * 2);
+            return
         }
     }
-
 }
-
-// function Masina(pavadinimas) {
-//     this.pavadinimas = pavadinimas;
-//     this.kelias = 0;
-//     this.greitis = 0;
-//     this.gazas = function(kiek) {
-//         this.greitis += kiek;
-//     };
-//     this.stabdis = function(kiek) {
-//         this.greitis -= kiek;
-//         if (this.greitis < 0) {
-//             this.greitis = 0;
-//         }
-//     };
-//     this.vaziuojam = function() {
-//         this.kelias += this.greitis;
-//     };
-//     this.asLyderis = function(kitaMasina) {
-//         if (this.kelias > kitaMasina.kelias) {
-//             return true;
-//         } else if (this.kelias === kitaMasina.kelias && this.greitis > kitaMasina.greitis) {
-//             return true;
-//         }
-//         return false;
-//     }
-// }
 
 const masinos = [
     new Masina("pirma"),
@@ -135,23 +115,29 @@ const masinos = [
 
 let checkPoint = 100;
 let lyderis;
-
 do {
     // keiciam greiti ir vaziuojam
     for (let i = 0; i < masinos.length; i++) {
-        // tikrinam del spoilerio
-        if (Math.floor(Math.random() * 10 + 1) % 2 !== 0) {
-            spoilerisPakeltas = true;
+        if (masinos[i] === SportineMasina) {
+            let positionSpoiler = Math.random(); {
+                if (positionSpoiler < 0.5) {
+                    SportineMasina.spoileris = false;
+                    return
+                }
+                if (positionSpoiler > 0.5) {
+                    SportineMasina.spoileris = true;
+                    return
+                }
+            }
         } else {
-            spoilerisPakeltas = false;
+            let keiciamGreiti = Math.random();
+            if (keiciamGreiti < 0.2) {
+                masinos[i].stabdis(Math.floor(Math.random() * 5 + 1));
+            } else if (keiciamGreiti < 0.7) {
+                masinos[i].gazas(Math.floor(Math.random() * 10 + 1));
+            }
+            masinos[i].vaziuojam();
         }
-        let keiciamGreiti = Math.random();
-        if (keiciamGreiti < 0.2) {
-            masinos[i].stabdis(Math.floor(Math.random() * 5 + 1));
-        } else if (keiciamGreiti < 0.7) {
-            masinos[i].gazas(Math.floor(Math.random() * 10 + 1));
-        }
-        masinos[i].vaziuojam();
     }
     // nustatom, kuris dabar pirmauja
     lyderis = 0;
@@ -165,7 +151,7 @@ do {
         console.log("Po " + checkPoint + " km. pirmauja:");
         console.log(masinos[lyderis]);
         checkPoint += 100;
-    } 
+    }
 } while (masinos[lyderis].kelias < 1000);
 
 // rusiuojam
