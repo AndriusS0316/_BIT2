@@ -447,3 +447,7 @@ puodukas3.isgerti(700);
 console.log(puodukas1);
 console.log(puodukas2);
 console.log(puodukas3);
+
+
+
+
