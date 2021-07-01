@@ -42,7 +42,6 @@ class Masina {
         this.pavadinimas = pavadinimas;
         this.kelias = 0;
         this.greitis = 0;
-        this.max = 50;
     }
 
     gazas(kiek) {
@@ -76,7 +75,6 @@ class Masina {
 class SportineMasina extends Masina {
     constructor(pavadinimas) {
         super(pavadinimas);
-        this.max = 200;
     }
 
     gazas(kiek) {
@@ -130,7 +128,7 @@ do {
     for (let i = 0; i < masinos.length; i++) {
         // tikrinam del spoilerio
         if (Math.floor(Math.random() * 10 + 1) % 2 !== 0) {
-            
+
         }
         let keiciamGreiti = Math.random();
         if (keiciamGreiti < 0.2) {
