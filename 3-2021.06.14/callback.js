@@ -2,6 +2,10 @@
 
 console.log("pradzia");
 
+const perskaiciau = (err, data) => { 
+    console.log("" + data);
+} // "=>" vadinamoji fat arrow funkcija
+
 function test1() {
     console.log("1");
 }    
