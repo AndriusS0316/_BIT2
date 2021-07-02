@@ -30,6 +30,10 @@ console.log("pabaiga");
 
 /*
 Susikurti 5 failus:
-
+1.txt
+1.txt
+1.txt
+1.txt
+1.txt
 
 */
