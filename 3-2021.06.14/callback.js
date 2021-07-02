@@ -31,9 +31,11 @@ console.log("pabaiga");
 /*
 Susikurti 5 failus:
 1.txt
-1.txt
-1.txt
-1.txt
-1.txt
+2.txt
+3.txt
+4.txt
+5.txt
+
+perskaityti failus tokia tvarka: 
 
 */
