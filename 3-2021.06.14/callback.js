@@ -36,6 +36,6 @@ Susikurti 5 failus:
 4.txt
 5.txt
 
-perskaityti failus tokia tvarka: 4, 3, 1 ; rezultatus sudeti i viena stringa, ta stringa suskaldyti
+perskaityti failus tokia tvarka: 4, 3, 1 ; rezultatus sudeti i viena stringa, ta stringa suskaldyti zodziais (per tarpa); atspausdinti kiekviena zodi ilgejimo tvarka; 
 
 */
