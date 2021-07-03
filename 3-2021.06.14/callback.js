@@ -46,11 +46,16 @@ let stringas = "Namu darbai ";
 const fs = require("fs");
 
 fs.readFile("4.txt", (err, data) => {
+    stringas = stringas + data; 
     console.log("" + data);
     fs.readFile("3.txt", (err, data) => {
+        stringas = stringas + data; 
         console.log("" + data);
         fs.readFile("1.txt", (err, data) => {
+            stringas = stringas + data; 
             console.log("" + data);
+            console.log(stringas);
         });
     });
 });
+
