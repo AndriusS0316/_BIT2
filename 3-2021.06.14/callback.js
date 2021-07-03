@@ -39,3 +39,5 @@ Susikurti 5 failus:
 perskaityti failus tokia tvarka: 4, 3, 1 ; rezultatus sudeti i viena stringa, ta stringa suskaldyti zodziais (per tarpa); atspausdinti kiekviena zodi ilgejimo tvarka; PO TO perskaityti failus: 5, 2 ; atspausdinti ju turini. 
 
 */
+
+
