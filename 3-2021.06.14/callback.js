@@ -41,14 +41,16 @@ perskaityti failus tokia tvarka: 4, 3, 1 ; rezultatus sudeti i viena stringa, ta
 */
 
 
+let stringas = "Namu darbai ";
+
 const fs = require("fs");
 
 fs.readFile("4.txt", (err, data) => {
-    data = "" + data;
+    console.log("" + data);
     fs.readFile("3.txt", (err, data) => {
-        data = "" + data;
+        console.log("" + data);
         fs.readFile("1.txt", (err, data) => {
-            data = "" + data;
+            console.log("" + data);
         });
     });
 });
