@@ -41,7 +41,7 @@ perskaityti failus tokia tvarka: 4, 3, 1 ; rezultatus sudeti i viena stringa, ta
 */
 
 
-let stringas = "Namu darbai ";
+let stringas = ["Namu darbai "];
 
 const fs = require("fs");
 
@@ -53,9 +53,12 @@ fs.readFile("4.txt", (err, data) => {
         console.log("" + data);
         fs.readFile("1.txt", (err, data) => {
             stringas = stringas + data; 
-            console.log("" + data);
-            console.log(stringas);
-        });
-    });
-});
+            console.log("" + data); 
+            console.log(stringas); 
+            
+        }); 
+    }); 
+}); 
 
+stringas.sort((e1, e2) => e2.length - e1.length); 
+console.log(stringas); 
