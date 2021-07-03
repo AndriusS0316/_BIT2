@@ -1,14 +1,14 @@
-"use strict"; 
+"use strict";
 
 console.log("pradzia");
 
-const perskaiciau = (err, data) => { 
+const perskaiciau = (err, data) => {
     console.log("" + data);
 } // "=>" vadinamoji fat arrow funkcija
 
 function test1() {
     console.log("1");
-}    
+}
 
 function test2() {
     console.log("2");
@@ -41,3 +41,14 @@ perskaityti failus tokia tvarka: 4, 3, 1 ; rezultatus sudeti i viena stringa, ta
 */
 
 
+const fs = require("fs");
+
+fs.readFile("4.txt", (err, data) => {
+    data = "" + data;
+    fs.readFile("3.txt", (err, data) => {
+        data = "" + data;
+        fs.readFile("1.txt", (err, data) => {
+            data = "" + data;
+        });
+    });
+});
