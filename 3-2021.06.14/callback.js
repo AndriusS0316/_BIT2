@@ -62,8 +62,8 @@ let m90 = [
     })
     ],
     [
-        stringas.sort((e1, e2) => e2.length - e1.length);
-        console.log(stringas);
+        stringas.sort((e1, e2) => e2.length - e1.length)
+        //console.log(stringas)
     ]
 ]
 
