@@ -62,12 +62,3 @@ fs.readFile("4.txt", (err, data) => {
 })
 
 
-stringas.sort((e1, e2) => e2.length - e1.length)
-//console.log(stringas)
-
-
-
-for (let i = 0; i < m90.length; i++) {
-    m90[i]
-}
-
