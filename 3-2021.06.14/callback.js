@@ -45,27 +45,27 @@ let stringas = ["Namu darbai "];
 
 const fs = require("fs");
 
-let m90 = [
-    [fs.readFile("4.txt", (err, data) => {
+
+fs.readFile("4.txt", (err, data) => {
+    stringas = stringas + data;
+    console.log("" + data);
+    fs.readFile("3.txt", (err, data) => {
         stringas = stringas + data;
         console.log("" + data);
-        fs.readFile("3.txt", (err, data) => {
+        fs.readFile("1.txt", (err, data) => {
             stringas = stringas + data;
             console.log("" + data);
-            fs.readFile("1.txt", (err, data) => {
-                stringas = stringas + data;
-                console.log("" + data);
-                console.log(stringas);
-            });
+            console.log(stringas);
         });
+    });
 
-    })
-    ],
-    [
-        stringas.sort((e1, e2) => e2.length - e1.length)
-        //console.log(stringas)
-    ]
-]
+})
+
+
+stringas.sort((e1, e2) => e2.length - e1.length)
+//console.log(stringas)
+
+
 
 for (let i = 0; i < m90.length; i++) {
     m90[i]
