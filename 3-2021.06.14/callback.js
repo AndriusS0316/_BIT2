@@ -48,13 +48,13 @@ const fs = require("fs");
 
 fs.readFile("4.txt", (err, data) => {
     console.log("" + data);
-    let vienas = ("" + data); 
+    let vienas = ("" + data);
     fs.readFile("3.txt", (err, data) => {
         console.log("" + data);
-        let du = ("" + data); 
+        let du = ("" + data);
         fs.readFile("1.txt", (err, data) => {
             console.log("" + data);
-            let trys = ("" + data); 
+            let trys = ("" + data);
             stringas = ["Namu darbai ", vienas, du, trys];
             console.log(stringas);
             stringas.sort((e1, e2) => e1.length - e2.length)
@@ -69,6 +69,32 @@ fs.readFile("4.txt", (err, data) => {
     });
 
 })
+
+
+
+// Aleksandro sprendimas 
+
+const fs = require("fs");
+let s = "";
+fs.readFile("4.txt", (err, data) => {
+    s += data;
+    fs.readFile("3.txt", (err, data) => {
+        s += " " + data;
+        fs.readFile("1.txt", (err, data) => {
+            s += " " + data;
+            let m = s.split(" ");
+            m.sort((e1, e2) => e1.length - e2.length);
+            console.log(m);
+            fs.readFile("5.txt", (err, data) => {
+                console.log("" + data);
+                fs.readFile("2.txt", (err, data) => {
+                    console.log("" + data);
+                });
+            });
+        });
+    });
+});
+
 
 
 
