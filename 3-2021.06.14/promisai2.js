@@ -24,6 +24,10 @@ const p1 = p.then(
 const p2 = p1.then(
     v => {
         console.log("p2 resolved with: " + v);
+    },
+    reason => {
+        console.log("p2 rejected with: " + reason);
+        return "new p2 reject value"
     }
 );
 const p3 = p2.catch(
@@ -33,5 +37,8 @@ const p3 = p2.catch(
     }
 );
 
+p3.finally(() => {
+    console.log("Visada!!!");
+});
 
 console.log("program finished");
