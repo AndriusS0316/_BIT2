@@ -2,13 +2,16 @@
 
 let p = new Promise((resolve, reject) => {
     console.log("start promise function");
-    if (Math.random() < 0.5) {
-        console.log("resolving promise");
-        resolve("resolve value");
-    } else {
-        console.log("rejecting promise");
-        reject("reject value");
-    }
+    setTimeout(() => {
+        if (Math.random() < 0.5) {
+            console.log("resolving promise");
+            resolve("resolve value");
+        } else {
+            console.log("rejecting promise");
+            reject("reject value");
+        }
+    });
+    
     console.log("finish promise function");
 });
 
@@ -23,5 +26,5 @@ p.then(
     }
 );
 
-
+console.log("program finished");
 
