@@ -47,27 +47,34 @@ const fs = require("fs");
 
 
 fs.readFile("4.txt", (err, data) => {
-    stringas = stringas + data;
     console.log("" + data);
+    let vienas = ("" + data); 
     fs.readFile("3.txt", (err, data) => {
-        stringas = stringas + data;
         console.log("" + data);
+        let du = ("" + data); 
         fs.readFile("1.txt", (err, data) => {
-            stringas = stringas + data;
             console.log("" + data);
+            let trys = ("" + data); 
+            stringas = ["Namu darbai ", vienas, du, trys];
             console.log(stringas);
+            stringas.sort((e1, e2) => e1.length - e2.length)
+            console.log(stringas);
+            fs.readFile("5.txt", (err, data) => {
+                console.log("" + data);
+                fs.readFile("2.txt", (err, data) => {
+                    console.log("" + data);
+                });
+            });
         });
     });
 
 })
 
 
-stringas.sort((e1, e2) => e2.length - e1.length)
+
 //console.log(stringas)
 
 
 
-for (let i = 0; i < m90.length; i++) {
-    m90[i]
-}
+
 
