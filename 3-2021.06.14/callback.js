@@ -72,9 +72,3 @@ fs.readFile("4.txt", (err, data) => {
 
 
 
-//console.log(stringas)
-
-
-
-
-
