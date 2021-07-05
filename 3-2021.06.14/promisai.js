@@ -10,7 +10,7 @@ let p = new Promise((resolve, reject) => {
             console.log("rejecting promise");
             reject("reject value");
         }
-    });
+    }, 10);
     
     console.log("finish promise function");
 });
@@ -28,3 +28,4 @@ p.then(
 
 console.log("program finished");
 
+// funkcija "catch" yra tokia pati, kaip funkcija su pirmu parametru "null". Tuomet daro tarsi antra parametra. 
