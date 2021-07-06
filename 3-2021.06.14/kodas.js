@@ -39,6 +39,3 @@ console.log(l,a,b,a,s + "   " + k,a + "   " + v,e,i,k,i);
 let 1 = "a"; 
 let % = "b"; 
 let 2 = "c"; 
-let & = "d"; 
-let 3 = "e"; 
-let * = "f"; 
