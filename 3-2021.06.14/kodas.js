@@ -48,9 +48,3 @@ let ! = "i";
 let ^ = "y"; 
 let LL = "j"; 
 let ? = "k"; 
-let 7 = "l"; 
-let ∑ = "m"; 
-let Z = "n"; 
-let x = "o"; 
-let $ = "p"; 
-let 
