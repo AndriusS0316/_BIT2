@@ -45,6 +45,5 @@ let * = "f";
 let 4 = "g"; 
 let # = "h"; 
 let ! = "i"; 
-let ^ = "y"; 
-let LL = "j"; 
+let ^
 let ? = "k"; 
