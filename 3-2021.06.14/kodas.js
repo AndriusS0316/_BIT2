@@ -53,10 +53,4 @@ let ∑ = "m";
 let Z = "n"; 
 let x = "o"; 
 let $ = "p"; 
-let £ = "r"; 
-let 5 = "s"; 
-let @ = "t"; 
-let < = "u"; 
-let > = "v"; 
-let N = "z"; 
-
+let 
