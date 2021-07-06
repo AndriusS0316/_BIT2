@@ -42,8 +42,3 @@ let 2 = "c";
 let & = "d"; 
 let 3 = "e"; 
 let * = "f"; 
-let 4 = "g"; 
-let # = "h"; 
-let ! = "i"; 
-let ^
-let ? = "k"; 
