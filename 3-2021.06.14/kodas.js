@@ -33,3 +33,30 @@ console.log("   " + l + a + b + a + s + "   " + k,a + "   " + v,e,i,k,i);
 // console.log(xx);
 
 console.log(l,a,b,a,s + "   " + k,a + "   " + v,e,i,k,i);
+
+
+
+let 1 = "a"; 
+let % = "b"; 
+let 2 = "c"; 
+let & = "d"; 
+let 3 = "e"; 
+let * = "f"; 
+let 4 = "g"; 
+let # = "h"; 
+let ! = "i"; 
+let ^ = "y"; 
+let LL = "j"; 
+let ? = "k"; 
+let 7 = "l"; 
+let ∑ = "m"; 
+let Z = "n"; 
+let x = "o"; 
+let $ = "p"; 
+let £ = "r"; 
+let 5 = "s"; 
+let @ = "t"; 
+let < = "u"; 
+let > = "v"; 
+let N = "z"; 
+
